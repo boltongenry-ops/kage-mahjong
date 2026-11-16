@@ -5,7 +5,7 @@ test('actual UI: campaign victory, map, modes, calendar, settings and shrine',as
  w.indexedDB=new IDBFactory();w.structuredClone=structuredClone;w.Worker=class{postMessage(){}onmessage=null;};w.fetch=async(url:string)=>new Response(url.includes('levels')?JSON.stringify(levels):readFileSync('public/art/shrine.svg','utf8'));
  const db:any=await new Promise((resolve,reject)=>{const r=w.indexedDB.open('kage-save',1);r.onupgradeneeded=()=>r.result.createObjectStore('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
  await new Promise<void>((resolve)=>{const t=db.transaction('state','readwrite');t.objectStore('state').put({version:1,stars:{},daily:{},best:0,sessions:{},settings:{sound:false,music:false,vibration:false,motion:false}},'current');t.oncomplete=()=>resolve();});db.close();
- w.document.body.innerHTML='<div id="app"></div><div id="toast"></div>';const errors:unknown[]=[];window.addEventListener('error',e=>errors.push(e.message));
+ w.document.body.innerHTML='<div id="app"></div><div id="toast"></div>';const errors:unknown[]=[];window.addEventListener('error',e=>errors.push((e as unknown as {message:string}).message));
  try{window.eval(result.outputFiles[0].text);await new Promise(r=>setTimeout(r,100));
  const click=(action:string)=>{const el=w.document.querySelector(`[data-action="${action}"]`);assert(el,`Missing ${action}`);el.click();};
  assert(w.document.body.textContent.includes('Искусство'));click('resume:campaign');assert(w.document.body.textContent.includes('Уровень 1'));
