@@ -1,0 +1,11 @@
+{
+  "levels": 500,
+  "templates": 30,
+  "verifiedSolutions": 500,
+  "exactDuplicates": 0,
+  "maxTray": 6,
+  "tiles": {
+    "min": 18,
+    "max": 108
+  }
+}

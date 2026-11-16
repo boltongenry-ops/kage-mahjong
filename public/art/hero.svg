@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1100" viewBox="0 0 720 1100" fill="none">
+<defs>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f1f1f1"/><stop offset="1" stop-color="#e0e0e0"/></linearGradient>
+ <linearGradient id="mist" x2="0" y2="1"><stop stop-color="#f1f1f1" stop-opacity="0"/><stop offset=".55" stop-color="#f1f1f1" stop-opacity=".94"/><stop offset="1" stop-color="#ededed" stop-opacity="0"/></linearGradient>
+ <linearGradient id="ink" x2="0" y2="1"><stop stop-color="#444444"/><stop offset="1" stop-color="#868686" stop-opacity=".15"/></linearGradient>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".065"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="2.8"/></filter>
+ <filter id="feather"><feGaussianBlur stdDeviation=".65"/></filter>
+</defs>
+<path fill="url(#paper)" d="M0 0h720v1100H0z"/>
+<g filter="url(#grain)">
+<circle cx="532" cy="247" r="79" fill="#bababa" opacity=".48"/>
+<circle cx="532" cy="247" r="76" stroke="#a9a9a9" stroke-width=".7" opacity=".3"/>
+<!-- distant ink mountains -->
+<path d="M-90 618 55 449 92 466 163 365 204 414 244 384 297 446 357 352 396 388 432 335 465 375 503 362 593 448 654 408 754 527 790 733H-90Z" fill="#ababab" opacity=".35" filter="url(#soft)"/>
+<path d="m263 617 113-153 52 48 81-120 68 68 31-22 49 69 28-6 65 115v185H244Z" fill="#989898" opacity=".42"/>
+<path d="m376 464 29 37-20 56 43-45 15 25-14 97 80-242-37 138 37-35 42 66-42-169 21 28 47 40-23 50 54-72-14 98 63-29-6 47 38-53-4 117 65 44" stroke="#7a7a7a" stroke-opacity=".25" stroke-width="3"/>
+<path d="M-50 741 20 634 52 648 128 525 179 577 204 561 259 619 287 597 344 677 379 661 445 738v175H-50Z" fill="#767676" opacity=".36"/>
+<path d="m29 719 100-194-25 153 42-69 34 61-51-145 50 52 25-16-10 103 65-45-21 112 49-134 22 104 35-24 32 104" stroke="#595959" stroke-width="2" opacity=".2"/>
+<path d="M-50 523h820v323H-50z" fill="url(#mist)"/>
+<path d="M-10 732c145-36 162-5 271-10s149-70 238-56 130 9 232-34v134H-10Z" fill="#eeeeee" opacity=".63" filter="url(#soft)"/>
+<!-- little trees in the haze -->
+<g fill="#666666" opacity=".28"><path d="m81 694 8-64 8 64h-16Zm-15-20 23-27 24 27H66Zm48 45 8-58 9 58h-17Zm-15-18 23-26 23 26H99Zm497-50 6-69 7 69h-13Zm-17-25 23-27 24 27h-47Zm47 39 5-55 6 55h-11Zm-14-17 19-23 21 23h-40Z"/></g>
+<!-- trail running into the mist -->
+<path d="M354 1100c0-85 123-121 89-166-20-25-113-37-113-74 0-25 41-47 77-62-32 32-51 44-30 61 34 27 126 39 134 77 9 42-76 103-60 164H354Z" fill="#f8f8f8" opacity=".86"/>
+<!-- torii on a far ridge -->
+<g opacity=".5" fill="#464646" transform="translate(354 704) scale(.47)"><path d="m0 0 50 8h111l52-8-8 13-40 8H48L8 13Zm31 29h151v12H31ZM47 18h12l-9 150H34Zm106 0h12l12 150h-16ZM58 70h99v9H58Z"/><path d="M91 15h26v41H91Z"/></g>
+<!-- rocky foreground ledge -->
+<path d="M445 955c33-29 53-31 90-37l54-40 55-6 33-27 43 5v250H469l-29-44-35-30 35-29Z" fill="#464646"/>
+<path d="m466 968 80-29 45-41 50-6-23 30 57-29 45 12v195H479l-15-40-41-36 36-22Z" fill="#373737"/>
+<path d="m510 961 45-11-18 25 69-36-18 43 51-31-36 49 72-34-60 65 105-22M465 1025l65-24-18 42 48-26-13 44" stroke="#888888" stroke-width="2" opacity=".35"/>
+<!-- lone ronin, woven hat and wind-swept robe -->
+<g fill="#282828">
+<path d="m524 784 7 24 18 3 11-28-12-8Z"/>
+<path d="m507 786 31-29 9-2 44 25-23 9-35 4Z"/>
+<path d="m512 783 29-21 40 18-36 6Z" fill="#666666"/>
+<path d="m519 781 24-19 26 17m-35 5 9-22 9 21" stroke="#2a2a2a" stroke-width="1.2"/>
+<path d="m530 804-20 15-10 51 17 9 6-28-1 28-14 68 29 4 10-59 8 58 30-5-18-68-8-50-14-17Z"/>
+<path d="m519 822-20 27-24 10-7 12 35-10 27-30Z"/>
+<path d="m550 819 20 24 21 10-4 9-28-14-15-20Z"/>
+<path d="m515 945-8 12 27 1 4-9Zm43 0 1 13 29 2-12-15Z"/>
+<path d="m521 809 29 5 24 15 48-2-38 12-33-12-24-8Z"/>
+<path d="m526 867 31-2 5 6-37 5Z" fill="#959595"/>
+<path d="m529 831-5 31m25-34 9 31m-20 25-12 54m28-56 17 53" stroke="#959595" opacity=".4" stroke-width="1.2"/>
+<!-- sheathed katana -->
+<path d="m526 861 76 39-2 5-78-38Z"/>
+<path d="m519 857 10 6-3 6-11-7Z" fill="#b1b1b1"/>
+<path d="m530 860-6 12" stroke="#1c1c1c" stroke-width="3"/>
+</g>
+<!-- pine entering from right -->
+<g stroke="#383838" stroke-linecap="round"><path d="M744 706c-40-30-50-50-78-72-26-21-55-30-83-39m84 39-8-49m31 69 25-43" stroke-width="9"/><path d="m596 599-44-18m108 6-19-20m76 48-3-34" stroke-width="4"/></g>
+<g fill="#3c3c3c"><path d="m520 581 35-16 8 9 27-2 23 17-38 2-24-3-31 6Zm82-16 25-16 19 6 5-7 27 18-32 8-44-9Zm72 16 27-18 19 3 22 22-45-2-23-5Zm-51 31 28-13 13 5 26 12-40 6-27-10Z"/></g>
+<!-- grasses -->
+<g stroke="#262626" stroke-width="2" stroke-linecap="round"><path d="m651 900 2-38m-2 23 17-23m-14 34-13-22m43-7 7-32m-8 21-5-20m15 25 13-21m-113 87 4-26m-5 15-9-11"/></g>
+<!-- birds -->
+<g stroke="#535353" stroke-width="2" stroke-linecap="round" opacity=".55"><path d="m428 301 10 3 10-6m-44 25 8 2 7-5m49-31 7 1 7-4"/></g>
+</g>
+</svg>
